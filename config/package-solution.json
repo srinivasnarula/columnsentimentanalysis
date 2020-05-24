@@ -1,0 +1,14 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "columnsentimentanalysis-client-side-solution",
+    "id": "da6e2f6f-e3be-4afb-8fb4-bfb13c1bfc34",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": true
+  },
+  "paths": {
+    "zippedPackage": "solution/columnsentimentanalysis.sppkg"
+  }
+}
