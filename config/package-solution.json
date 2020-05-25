@@ -1,14 +1,25 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "columnsentimentanalysis-client-side-solution",
-    "id": "da6e2f6f-e3be-4afb-8fb4-bfb13c1bfc34",
+    "name": "sentiment-analysis-extension-client-side-solution",
+    "id": "de2f98fd-7030-472d-8c62-45501ed47001",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
-    "skipFeatureDeployment": true,
-    "isDomainIsolated": true
+    "features": [
+      {
+        "title": "Application Extension - Deployment of custom action.",
+        "description": "Deploys a custom action with ClientSideComponentId association",
+        "id": "a7f92647-68b5-4012-b317-a6bbf6562d59",
+        "version": "1.0.0.0",
+        "assets": {
+          "elementManifests": [
+            "elements.xml"
+          ]
+        }
+      }
+    ]
   },
   "paths": {
-    "zippedPackage": "solution/columnsentimentanalysis.sppkg"
+    "zippedPackage": "solution/sentiment-analysis-extension.sppkg"
   }
 }

@@ -1,12 +1,12 @@
 {
   "@microsoft/generator-sharepoint": {
     "isCreatingSolution": true,
-    "environment": "spo",
+    "environment": "onprem19",
     "version": "1.10.0",
-    "libraryName": "columnsentimentanalysis",
-    "libraryId": "da6e2f6f-e3be-4afb-8fb4-bfb13c1bfc34",
+    "libraryName": "sentiment-analysis-extension",
+    "libraryId": "de2f98fd-7030-472d-8c62-45501ed47001",
     "packageManager": "npm",
-    "isDomainIsolated": true,
-    "componentType": "webpart"
+    "componentType": "extension",
+    "extensionType": "ListViewCommandSet"
   }
 }

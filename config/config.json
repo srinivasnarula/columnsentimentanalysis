@@ -2,17 +2,17 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
   "version": "2.0",
   "bundles": {
-    "csa-web-part": {
+    "sentiment-analysis-command-set": {
       "components": [
         {
-          "entrypoint": "./lib/webparts/csa/CsaWebPart.js",
-          "manifest": "./src/webparts/csa/CsaWebPart.manifest.json"
+          "entrypoint": "./lib/extensions/sentimentAnalysis/SentimentAnalysisCommandSet.js",
+          "manifest": "./src/extensions/sentimentAnalysis/SentimentAnalysisCommandSet.manifest.json"
         }
       ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "CsaWebPartStrings": "lib/webparts/csa/loc/{locale}.js"
+    "SentimentAnalysisCommandSetStrings": "lib/extensions/sentimentAnalysis/loc/{locale}.js"
   }
 }

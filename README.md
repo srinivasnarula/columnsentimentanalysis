@@ -1,4 +1,4 @@
-## columnsentimentanalysis
+## sentiment-analysis-extension
 
 This is where you include your WebPart documentation.
 
