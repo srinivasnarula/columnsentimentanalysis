@@ -1,3 +1,5 @@
+import * as React from "react";  
+import * as ReactDOM from "react-dom";
 import { override } from '@microsoft/decorators';
 import { Log } from '@microsoft/sp-core-library';
 import {
@@ -9,6 +11,7 @@ import {
 import { Dialog } from '@microsoft/sp-dialog';
 
 import * as strings from 'SentimentAnalysisCommandSetStrings';
+import configuration from './component/configuration';
 
 /**
  * If your command set uses the ClientSideComponentProperties JSON input,
@@ -37,6 +40,7 @@ export default class SentimentAnalysisCommandSet extends BaseListViewCommandSet<
     if (compareOneCommand) {
       // This command should be hidden unless exactly one row is selected.
       compareOneCommand.visible = event.selectedRows.length === 1;
+      
     }
   }
 
@@ -47,7 +51,15 @@ export default class SentimentAnalysisCommandSet extends BaseListViewCommandSet<
         Dialog.alert(`${this.properties.sampleTextOne}`);
         break;
       case 'COMMAND_2':
-        Dialog.alert(`${this.properties.sampleTextTwo}`);
+        //Dialog.alert(`${this.properties.sampleTextTwo}`);
+        const div = document.createElement('div');
+        const element: React.ReactElement<{} > = React.createElement(
+          configuration,
+          {
+            
+          }
+        );
+        ReactDOM.render(element, div);
         break;
       default:
         throw new Error('Unknown command');
